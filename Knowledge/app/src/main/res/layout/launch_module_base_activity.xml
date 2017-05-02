@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/tv_singletop"
+            android:layout_width="290dp"
+            android:layout_height="81dp"
+            android:text="@string/singleTop"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/round_corner_rect_bg_yellow_big_border_radius"/>
+        <TextView
+            android:id="@+id/tv_singletask"
+            android:layout_width="290dp"
+            android:layout_height="81dp"
+            android:text="@string/singleTask"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/round_corner_rect_bg_yellow_big_border_radius"/>
+        <TextView
+            android:id="@+id/tv_stantard"
+            android:layout_width="290dp"
+            android:layout_height="81dp"
+            android:text="@string/singleStandard"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/round_corner_rect_bg_yellow_big_border_radius"/>
+        <TextView
+            android:id="@+id/tv_singleinstance"
+            android:layout_width="290dp"
+            android:layout_height="81dp"
+            android:text="@string/singleInstance"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/round_corner_rect_bg_yellow_big_border_radius"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
