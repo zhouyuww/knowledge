@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.knowledge.R;
+import com.knowledge.jni.datastructure.Sort;
 import com.knowledge.jni.math.MathKit;
 
 /**
@@ -42,7 +43,9 @@ public class JniTestActivity extends Activity {
             @Override
             public void onClick(View v) {
                 try{
-                    start = MathKit.square(start);
+                    int[] array = new int[]{3,8,30,98,33,2,3,44,556};
+                    int[] tar  = Sort.bubbleSort(array);
+                    Log.e(tag,tar.toString());
                     conclusion.setText(start+"");
                 }catch (Exception e){
                     e.printStackTrace();
