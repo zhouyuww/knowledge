@@ -4,7 +4,7 @@
 #include <jni.h>
 #include "com_knowledge_jni_math_MathKit.h"
 
-JNIEXPORT  jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_quickSort(JNIEnv *env, jclass cls, jintArray num)
+JNIEXPORT jint  JNICALL Java_com_knowledge_jni_math_MathKit_square(JNIEnv *env, jclass cls, jint num)
  {
     return num*num;
  }

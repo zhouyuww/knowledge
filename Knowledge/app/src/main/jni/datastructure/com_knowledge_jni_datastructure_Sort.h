@@ -82,4 +82,5 @@ JNIEXPORT jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_bubbleSor
 
 #ifdef __cplusplus
 }
+
 #endif
