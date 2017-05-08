@@ -32,3 +32,4 @@ JNIEXPORT  jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_bubbleSo
     (*env).SetIntArrayRegion(result, 0, length, arr); // 将cbuf转存入result
     return result;
 }
+
