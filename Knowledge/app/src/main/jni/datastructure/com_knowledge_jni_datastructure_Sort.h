@@ -79,6 +79,9 @@ JNIEXPORT jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_quickSort
 
 JNIEXPORT jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_bubbleSort(JNIEnv *env, jclass cls, jintArray num);
 
+jint quickSort(jint *arr,jint start ,jint end);
+
+void swap(jint *arr,jint start ,jint tar);
 
 #ifdef __cplusplus
 }

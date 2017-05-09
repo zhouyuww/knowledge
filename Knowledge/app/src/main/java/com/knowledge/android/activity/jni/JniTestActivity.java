@@ -47,6 +47,7 @@ public class JniTestActivity extends Activity {
                     int[] array = new int[]{3,8,30,98,33,1,5,44,556,110,2020,23,2,2232,23,22344,5454,546,7,454,5445,643,10987,232,324,23564,6565,80906};
                     int[] tar  = Sort.bubbleSort(array);
                     Linkedlist.singlylinkedlist(tar);
+                    Sort.quickSort(array);
                     Log.e(tag,tar.toString());
                     conclusion.setText(start+"");
                 }catch (Exception e){
