@@ -13,6 +13,11 @@ android {
 
         ndk{
             moduleName "jniTest"
+            ldLibs "log", "z", "m"
+            // 添加依赖库
+            ldLibs.addAll(['android','OpenSLES', 'log'])
+            // 生成不同abi体系的so库
+            abiFilters "armeabi", "armeabi-v7a", "x86"  //输出指定三种abi体系结构下的so库。
         }
     }
 
@@ -26,6 +31,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+        }
+        debug {
+            jniDebuggable true
         }
     }
 
@@ -33,7 +43,7 @@ android {
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })

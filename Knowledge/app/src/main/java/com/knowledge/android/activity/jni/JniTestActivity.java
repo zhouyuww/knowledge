@@ -44,7 +44,7 @@ public class JniTestActivity extends Activity {
             @Override
             public void onClick(View v) {
                 try{
-                    int[] array = new int[]{3,8,30,98,33,2,3,44,556};
+                    int[] array = new int[]{3,8,30,98,33,1,5,44,556,110,2020,23,2,2232,23,22344,5454,546,7,454,5445,643,10987,232,324,23564,6565,80906};
                     int[] tar  = Sort.bubbleSort(array);
                     Linkedlist.singlylinkedlist(tar);
                     Log.e(tag,tar.toString());

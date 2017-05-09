@@ -7,8 +7,14 @@
 
 JNIEXPORT  jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_quickSort(JNIEnv *env, jclass cls, jintArray arraysFromJava)
 {
+
+
+
     return arraysFromJava;
 }
+
+
+
 
 
 JNIEXPORT  jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_bubbleSort(JNIEnv *env, jclass cls, jintArray arraysFromJava)

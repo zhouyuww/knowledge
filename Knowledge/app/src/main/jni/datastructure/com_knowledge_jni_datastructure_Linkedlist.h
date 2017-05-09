@@ -84,17 +84,18 @@ extern "C" {
  * Signature: ()Ljava/lang/String;
  */
 
-JNIEXPORT  int  JNICALL Java_com_knowledge_jni_datastructure_Linkedlist_singlylinkedlist(JNIEnv *env, jclass cls, jintArray arraysFromJava);
+JNIEXPORT  jintArray  JNICALL Java_com_knowledge_jni_datastructure_Linkedlist_singlylinkedlist(JNIEnv *env, jclass cls, jintArray arraysFromJava);
+
+class LinklistNode{
+public:
+    int num;
+    LinklistNode *next;
+};
+
+int inverseLinkedlist(LinklistNode* start,jint *array,int lenght);
+
 
 #ifdef __cplusplus
 }
 
 #endif
-
- class LinklistNode{
-    public:
-        int num;
-        LinklistNode *next;
-};
-
-LinklistNode*    inverseLinkedlist(LinklistNode* start,jint *array,int lenght);
