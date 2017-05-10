@@ -10,6 +10,10 @@ public class Sort {
 
     public static native int[] bubbleSort(int[] nums);
 
+    public static native int[] choiceSort(int[] nums);
+
+    public static native int[] shellSort(int[] nums);
+
     static {
         System.loadLibrary("jniTest");
     }
