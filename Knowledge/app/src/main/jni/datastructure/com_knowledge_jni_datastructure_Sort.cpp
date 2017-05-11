@@ -105,7 +105,8 @@ JNIEXPORT jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_shellSort
 }
 
 
-JNIEXPORT jintArray  JNICALL Java_com_knowledge_jni_datastructure_Sort_choiceSort(JNIEnv *env, jclass cls, jintArray num){
+
+JNICALL jintArray Java_com_knowledge_jni_datastructure_Sort_choiceSort(JNIEnv *env, jclass cls, jintArray num){
     jsize length;
     jint *arr;
     arr = (*env).GetIntArrayElements(num, NULL);

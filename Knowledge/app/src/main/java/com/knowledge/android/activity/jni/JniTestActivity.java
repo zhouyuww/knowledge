@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.knowledge.R;
 import com.knowledge.jni.datastructure.Linkedlist;
 import com.knowledge.jni.datastructure.Sort;
+import com.knowledge.jni.designpattern.Factory;
 import com.knowledge.jni.math.MathKit;
 
 /**
@@ -49,7 +50,8 @@ public class JniTestActivity extends Activity {
 //                    Linkedlist.singlylinkedlist(tar);
 //                    Sort.quickSort(array);
 //                    Sort.choiceSort(array);
-                    Sort.shellSort(array);
+//                    Sort.shellSort(array);
+                    Factory.create();
                     Log.e(tag,tar.toString());
                     conclusion.setText(start+"");
                 }catch (Exception e){
