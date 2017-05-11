@@ -19,7 +19,8 @@ Product::~Product() {
 }
 
 ConcreteProduct::ConcreteProduct() {
-    LOGE("%d",3000);
+    LOGE("ConcreteProduct");
+
 }
 
 ConcreteProduct::~ConcreteProduct() {

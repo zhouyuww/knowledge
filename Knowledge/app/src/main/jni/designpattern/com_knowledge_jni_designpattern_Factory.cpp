@@ -15,7 +15,7 @@
 #define  LOGE(...)  __android_log_print(ANDROID_LOG_ERROR,LOG_TAG,__VA_ARGS__)
 
 JNIEXPORT jint  JNICALL Java_com_knowledge_jni_designpattern_Factory_create(JNIEnv *env, jclass cls){
-       LOGE("%d",1000);
+       LOGE("Java_com_knowledge_jni_designpattern_Factory_create");
        Factoryp* factory = new ConcreateFactory();
        Product* p = factory->CreateProduct();
     return 1;

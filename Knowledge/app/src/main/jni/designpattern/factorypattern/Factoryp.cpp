@@ -20,7 +20,7 @@ Factoryp::~Factoryp() {
 }
 
 ConcreateFactory::ConcreateFactory() {
-    LOGE("%d",2000);
+    LOGE("ConcreateFactory");
 }
 
 ConcreateFactory::~ConcreateFactory() {
