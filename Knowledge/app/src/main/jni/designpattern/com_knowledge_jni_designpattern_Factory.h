@@ -62,9 +62,11 @@ extern "C" {
 #undef   com_knowledge_jni_designpattern_Factory_RESULT_OK
 #define  com_knowledge_jni_designpattern_Factory_RESULT_OK -1L
 
-#ifdef __cplusplus
-}
 
 JNIEXPORT jint  JNICALL Java_com_knowledge_jni_designpattern_Factory_create(JNIEnv *env, jclass cls);
+
+
+#ifdef __cplusplus
+}
 
 #endif
