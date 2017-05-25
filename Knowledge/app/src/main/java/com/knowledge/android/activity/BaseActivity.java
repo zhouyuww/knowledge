@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.SparseArray;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,6 +14,10 @@ import com.knowledge.android.activity.launchmodule.singleinstance.SingleInstance
 import com.knowledge.android.activity.launchmodule.singletask.SingleTaskActivity;
 import com.knowledge.android.activity.launchmodule.singletop.SingleTopActivity;
 import com.knowledge.android.activity.launchmodule.standard.SingleStandardActivity;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Vector;
 
 /**
  * Created by universe on 2017/5/2.
@@ -26,6 +31,10 @@ public class BaseActivity extends Activity{
     public TextView singleInstance ;
     public String tag;
     public Context context;
+    public ArrayList arrayList;
+    public Vector vector;
+    public LinkedList linkedList;
+    public SparseArray sparseArray;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
