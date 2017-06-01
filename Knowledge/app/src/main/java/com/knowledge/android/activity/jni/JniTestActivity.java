@@ -8,10 +8,10 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.knowledge.R;
-import com.knowledge.jni.datastructure.Linkedlist;
 import com.knowledge.jni.datastructure.Sort;
-import com.knowledge.jni.designpattern.Factory;
-import com.knowledge.jni.math.MathKit;
+import com.knowledge.jni.designpattern.AbstractFactory.FactoryTest;
+import com.knowledge.jni.designpattern.factorypattern.CarFactory;
+import com.knowledge.jni.designpattern.factorypattern.Factory;
 
 /**
  * Created by universe on 2017/5/2.
@@ -19,11 +19,11 @@ import com.knowledge.jni.math.MathKit;
 
 public class JniTestActivity extends Activity {
 
-    public TextView startMath ;
-    public TextView conclusion ;
+    public TextView startMath;
+    public TextView conclusion;
     public String tag;
     public Context context;
-    public int start=2;
+    public int start = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +33,9 @@ public class JniTestActivity extends Activity {
         goTest();
     }
 
-    private void  init(){
-        startMath = (TextView)findViewById(R.id.tv_math);
-        conclusion  = (TextView)findViewById(R.id.tv_conclusion);
+    private void init() {
+        startMath = (TextView) findViewById(R.id.tv_math);
+        conclusion = (TextView) findViewById(R.id.tv_conclusion);
         tag = this.getClass().getName();
         context = this;
     }
@@ -44,17 +44,18 @@ public class JniTestActivity extends Activity {
         startMath.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try{
-                    int[] array = new int[]{33,8,30,98,33,1,5,44,556,110,2020,23,2,2232,23,22344,5454,546,7,454,5445,643,10987,232,324,23564,6565,80906};
-                    int[] tar  = Sort.bubbleSort(array);
+                try {
+                    int[] array = new int[]{33, 8, 30, 98, 33, 1, 5, 44, 556, 110, 2020, 23, 2, 2232, 23, 22344, 5454, 546, 7, 454, 5445, 643, 10987, 232, 324, 23564, 6565, 80906};
+                    int[] tar = Sort.bubbleSort(array);
 //                    Linkedlist.singlylinkedlist(tar);
                     Sort.quickSort(array);
 //                    Sort.choiceSort(array);
 //                    Sort.shellSort(array);
-                    Factory.create();
-                    Log.e(tag,tar.toString());
-                    conclusion.setText(start+"");
-                }catch (Exception e){
+                    Log.e(tag, tar.toString());
+                    conclusion.setText(start + "");
+                    CarFactory.test();
+                    FactoryTest.test();
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -65,34 +66,34 @@ public class JniTestActivity extends Activity {
     @Override
     public void onStart() {
         super.onStart();
-        Log.e(tag,"onStart");
+        Log.e(tag, "onStart");
     }
 
 
     @Override
     public void onResume() {
         super.onResume();
-        Log.e(tag,"onResume");
+        Log.e(tag, "onResume");
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        Log.e(tag,"onPause");
+        Log.e(tag, "onPause");
     }
 
 
     @Override
     public void onStop() {
         super.onStop();
-        Log.e(tag,"onStop");
+        Log.e(tag, "onStop");
     }
 
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.e(tag,"onDestory");
+        Log.e(tag, "onDestory");
     }
 
 }
