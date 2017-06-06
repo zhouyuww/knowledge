@@ -1,4 +1,4 @@
-package com.knowledge.jni.designpattern.AbstractFactory;
+package com.knowledge.jni.designpattern.abstractfactory;
 
 import android.util.Log;
 

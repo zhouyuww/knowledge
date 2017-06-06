@@ -9,9 +9,10 @@ import android.widget.TextView;
 
 import com.knowledge.R;
 import com.knowledge.jni.datastructure.Sort;
-import com.knowledge.jni.designpattern.AbstractFactory.FactoryTest;
+import com.knowledge.jni.designpattern.abstractfactory.FactoryTest;
+import com.knowledge.jni.designpattern.adapterpattern.AudioPlayer;
+import com.knowledge.jni.designpattern.prototypepattern.ShapeCache;
 import com.knowledge.jni.designpattern.factorypattern.CarFactory;
-import com.knowledge.jni.designpattern.factorypattern.Factory;
 
 /**
  * Created by universe on 2017/5/2.
@@ -53,8 +54,10 @@ public class JniTestActivity extends Activity {
 //                    Sort.shellSort(array);
                     Log.e(tag, tar.toString());
                     conclusion.setText(start + "");
-                    CarFactory.test();
-                    FactoryTest.test();
+//                    CarFactory.test();
+//                    FactoryTest.test();
+//                    ShapeCache.test();
+                    AudioPlayer.test();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

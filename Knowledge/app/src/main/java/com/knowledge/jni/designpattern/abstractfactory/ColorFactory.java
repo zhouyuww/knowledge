@@ -1,4 +1,4 @@
-package com.knowledge.jni.designpattern.AbstractFactory;
+package com.knowledge.jni.designpattern.abstractfactory;
 
 /**
  * Created by universe on 2017/6/1.

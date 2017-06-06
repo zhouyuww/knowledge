@@ -1,4 +1,4 @@
-package com.knowledge.jni.designpattern.SingletonPattern;
+package com.knowledge.jni.designpattern.singletonpattern;
 
 /**
  * Created by universe on 2017/6/1.
