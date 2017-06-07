@@ -6,6 +6,6 @@ package com.knowledge.jni.designpattern.bridgepattern;
 
 public interface DrawApi {
 
-   public void draw();
+   public void draw(int x,int y);
 
 }

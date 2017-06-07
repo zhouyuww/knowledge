@@ -11,6 +11,10 @@ import com.knowledge.R;
 import com.knowledge.jni.datastructure.Sort;
 import com.knowledge.jni.designpattern.abstractfactory.FactoryTest;
 import com.knowledge.jni.designpattern.adapterpattern.AudioPlayer;
+import com.knowledge.jni.designpattern.bridgepattern.CircleDraw;
+import com.knowledge.jni.designpattern.compositepattern.Company;
+import com.knowledge.jni.designpattern.criteriapattern.CriterPattern;
+import com.knowledge.jni.designpattern.decoratorpattern.DecoratorTest;
 import com.knowledge.jni.designpattern.prototypepattern.ShapeCache;
 import com.knowledge.jni.designpattern.factorypattern.CarFactory;
 
@@ -57,7 +61,11 @@ public class JniTestActivity extends Activity {
 //                    CarFactory.test();
 //                    FactoryTest.test();
 //                    ShapeCache.test();
-                    AudioPlayer.test();
+//                    AudioPlayer.test();
+                    CircleDraw.test();
+                    CriterPattern.test();
+                    Company.test();
+                    DecoratorTest.test();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
