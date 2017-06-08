@@ -15,6 +15,8 @@ import com.knowledge.jni.designpattern.bridgepattern.CircleDraw;
 import com.knowledge.jni.designpattern.compositepattern.Company;
 import com.knowledge.jni.designpattern.criteriapattern.CriterPattern;
 import com.knowledge.jni.designpattern.decoratorpattern.DecoratorTest;
+import com.knowledge.jni.designpattern.facadepattern.FacadeTest;
+import com.knowledge.jni.designpattern.flyweightpattern.FlyweightTest;
 import com.knowledge.jni.designpattern.prototypepattern.ShapeCache;
 import com.knowledge.jni.designpattern.factorypattern.CarFactory;
 
@@ -62,10 +64,12 @@ public class JniTestActivity extends Activity {
 //                    FactoryTest.test();
 //                    ShapeCache.test();
 //                    AudioPlayer.test();
-                    CircleDraw.test();
-                    CriterPattern.test();
-                    Company.test();
-                    DecoratorTest.test();
+//                    CircleDraw.test();
+//                    CriterPattern.test();
+//                    Company.test();
+//                    DecoratorTest.test();
+                    FacadeTest.test();
+                    FlyweightTest.test();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
