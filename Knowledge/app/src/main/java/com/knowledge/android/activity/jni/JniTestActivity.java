@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.knowledge.R;
 import com.knowledge.jni.datastructure.Sort;
+import com.knowledge.jni.datastructure.TwoSum;
 import com.knowledge.jni.designpattern.abstractfactory.FactoryTest;
 import com.knowledge.jni.designpattern.adapterpattern.AudioPlayer;
 import com.knowledge.jni.designpattern.bridgepattern.CircleDraw;
@@ -68,8 +69,9 @@ public class JniTestActivity extends Activity {
 //                    CriterPattern.test();
 //                    Company.test();
 //                    DecoratorTest.test();
-                    FacadeTest.test();
-                    FlyweightTest.test();
+//                    FacadeTest.test();
+//                    FlyweightTest.test();
+                    TwoSum.test();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
